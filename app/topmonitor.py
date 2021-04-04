@@ -9,8 +9,8 @@ import os
 AREA_ID = {"bouldering": 12, "indoor-length": 13, "outdoor-length": 14}
 INTERVAL = 60
 
-chat_id = os.environ["TELEGRAM_CHAT_ID"]
-bot_token = os.environ["TELEGRAM_BOT_TOKEN"]
+chat_id = os.environ.get("TELEGRAM_CHAT_ID")
+bot_token = os.environ.get("TELEGRAM_BOT_TOKEN")
 logger = get_logger("topmonitor")
 
 

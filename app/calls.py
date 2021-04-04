@@ -2,7 +2,7 @@ import requests
 import datetime
 import os
 
-URL = os.environ["URL"]
+URL = os.environ.get("URL")
 
 
 def check_availability(area, date, start_at):
