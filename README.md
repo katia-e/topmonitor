@@ -41,8 +41,8 @@ Usage: topmonitor.py [OPTIONS] COMMAND [ARGS]...
   Monitor top logger for free slots
 
 Options:
-  --area TEXT                 Climbing area: ['bouldering', 'indoor-length',
-                              'outdoor-length']
+  --area TEXT                 Climbing area: ['boulder', 'indoor',
+                              'outdoor']
   --date TEXT                 Date: yyyy-mm-dd or today/tomorrow, default:
                               today
   --slots TEXT                List of slots to monitor, format: hh:mm,
