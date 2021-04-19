@@ -17,9 +17,9 @@ def get_logger(module_name: str, loggin_level=logging.INFO):
 
 
 class ClimbingArea(Enum):
-    BOULDERING = 12
-    INDOOR_LENGTH = 13
-    OUTDOOR_LENGTH = 14
+    BOULDER = 12
+    INDOOR = 13
+    OUTDOOR = 14
 
     @classmethod
     def get_by_name(cls, name: str):
