@@ -16,7 +16,7 @@ logger = get_logger("topmonitor")
 
 @click.group(invoke_without_command=True)
 @click.option('--area',
-              default="indoor",
+              default="outdoor",
               help=f'Climbing area: {ClimbingArea.names()}')
 @click.option('--date',
               default='today',
