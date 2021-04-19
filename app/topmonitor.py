@@ -16,7 +16,7 @@ logger = get_logger("topmonitor")
 
 @click.group(invoke_without_command=True)
 @click.option('--area',
-              default="indoor-length",
+              default="indoor",
               help=f'Climbing area: {ClimbingArea.names()}')
 @click.option('--date',
               default='today',
@@ -63,7 +63,7 @@ def monitor(ctx, date: str, area: str, slots: list, pooling_interval: int):
               default='123',
               help='date: yyyy-mm-dd or today/tomorrow')
 @click.option('--area',
-              default="indoor-length",
+              default="outdoor",
               help=f'Climbing area: {ClimbingArea.names()}')
 def list_slots(date: str, area: str):
     print(yaml.dump(get_slots_schedule(date, area)))
